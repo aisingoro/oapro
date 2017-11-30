@@ -1,0 +1,33 @@
+.aui-fade-enter-active,.aui-fade-leave-active {
+  opacity: 1;
+  transition: opacity linear 0.2s;
+}
+
+.aui-fade-enter, .aui-fade-leave-to {
+  opacity: 0;
+}
+
+.aui-dialog-enter-active, .aui-dialog-leave-active {
+  opacity: 1;
+  transition-duration: 400ms;
+  transform: translate(-50%, -50%) scale(1)!important;
+  transition-property: transform, opacity!important;
+}
+.aui-dialog-leave-active {
+  transition-duration: 300ms;
+}
+.aui-dialog-enter {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(1.185)!important;
+}
+.aui-dialog-leave-active {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.85)!important;
+}
+
+.aui-self-mask-enter, .aui-self-mask-leave-active {
+  opacity: 0;
+}
+.aui-self-mask-leave-active, .aui-self-mask-enter-active {
+  transition: opacity 300ms;
+}

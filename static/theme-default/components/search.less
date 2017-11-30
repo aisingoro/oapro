@@ -1,0 +1,61 @@
+@import '../weui/icon/weui_icon_font';
+@import '../weui/widget/weui_searchbar/weui_searchbar';
+@import '../weui/widget/weui_cell/weui_cell_global';
+@import '../weui/widget/weui_cell/weui_access';
+
+.aui-search-bar__box{
+    .weui-search-bar__box
+}
+.aui-search-bar__form{
+    .weui-search-bar__form
+}
+.aui-search-bar{
+    .weui-search-bar
+}
+.aui-search-fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  background: @search-fixed-background;
+  backdrop-filter: blur(5px);
+}
+
+.aui-search-box {
+  width: 100%;
+}
+
+.aui-cell_primary{
+    .weui-cell_primary
+}
+
+.aui-cells.aui-search_show {
+  margin-top: 0!important;
+  overflow-y: auto;
+  max-height: 400px;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &::after {
+    display: none;
+  }
+}
+
+.aui-search-mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 90%;
+  height: 100%;
+  z-index: 5;
+}
+
+.aui-search-bar__label{
+    .weui-search-bar__label
+}
+
+.aui-search-bar__cancel-btn{
+    .weui-search-bar__cancel-btn
+}

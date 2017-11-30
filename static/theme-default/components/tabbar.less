@@ -1,0 +1,28 @@
+@import '../weui/widget/weui_tab/vux-tabbar.less';
+@import './common/reddot.less';
+
+.aui-tabbar{
+    .weui-tabbar
+}
+.aui-tabbar__item{
+    .weui-tabbar__item
+}
+.weui-tabbar__icon {
+  position: relative;
+}
+.weui-tabbar__icon > sup {
+  position: absolute;
+  top: -8px;
+  left: 100%;
+  transform: translateX(-50%);
+  z-index: 101;
+}
+.weui-tabbar__item.aui-tabbar-simple {
+  padding: 0;
+  height: 50px;
+  line-height: 50px;
+}
+.aui-tabbar-simple .weui-tabbar__label {
+  font-size: 14px;
+  line-height: 50px;
+}

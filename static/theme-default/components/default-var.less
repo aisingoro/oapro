@@ -1,0 +1,166 @@
+@import './common/tap.less';
+@import './common/transition.less';
+@import '../weui/base/mixin/setArrow.less';
+@import '../weui/widget/weui_cell/weui_cell_global';
+@import '../weui/widget/weui_cell/weui_access';
+@import '../weui/widget/weui-loading/weui-loading.less';
+@import '../weui/widget/weui_tips/weui_mask';
+@import '../weui/widget/weui_tips/weui_dialog';
+@import '../weui/widget/weui_panel/weui_panel';
+@import '../weui/widget/weui_cell/weui_form/weui-form-preview.less';
+@import '../weui/widget/weui_cell/weui_check';
+@import '../weui/widget/weui-loading/weui-loading.less';
+@import '../weui/widget/weui_tips/weui_toast';
+@import '../weui/widget/weui_progress/weui_progress';
+@import '../weui/widget/weui-button/weui-button.less';
+
+.aui-cell-justify {
+  height: unit(@weuiCellLineHeight, em);
+  &&:after {
+    content: ".";
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    height: 0;
+  }
+}
+// loading、toast基础引用
+
+.aui-loading{
+    .weui-loading
+}
+
+// form基础引用
+.aui-form-preview{
+    .weui-form-preview
+}
+
+.aui-form-preview__hd{
+    .weui-form-preview__hd
+}
+
+.aui-form-preview__bd{
+    .weui-form-preview__bd
+}
+
+.aui-form-preview__item{
+    .weui-form-preview__item
+}
+
+.aui-form-preview__ft{
+    .weui-form-preview__ft
+}
+
+.aui-form-preview__btn{
+    .weui-form-preview__btn
+}
+
+.aui-form-preview__btn_default{
+    .weui-form-preview__btn_default
+}
+
+.aui-form-preview__btn_primary{
+    .weui-form-preview__btn_primary
+}
+
+.aui-form-preview__label{
+    .weui-form-preview__label
+}
+
+.aui-form-preview__value{
+    .weui-form-preview__value
+}
+
+// panel基础引用
+.aui-panel{
+    .weui-panel
+}
+
+.aui-panel__hd{
+    .weui-panel__hd
+}
+
+.aui-panel .aui-cell:first-child:before {
+  display: block;
+}
+
+// cell-check基础引用
+.aui-check{
+    .weui-check
+}
+// cells基础引用
+.aui-cells{
+    .weui-cells
+}
+
+.aui-cells__title{
+  .weui-cells__title
+}
+
+// cell基础引用
+.aui-cell{
+    .weui-cell
+}
+
+.aui-cell_access{
+    .weui-cell_access
+}
+
+.aui-cell_link{
+    .weui-cell_link
+}
+
+.aui-cell__bd{
+    .weui-cell__bd
+}
+
+.aui-cell__ft{
+    .weui-cell__ft
+}
+
+.aui-cell-primary{
+  flex: 1;
+}
+// dialog基础引用
+.aui-dialog{
+    .weui-dialog
+}
+
+.aui-dialog__hd{
+    .weui-dialog__hd
+}
+
+.aui-dialog__title{
+    .weui-dialog__title
+}
+
+.aui-dialog__bd{
+    .weui-dialog__bd
+}
+
+.aui-dialog__ft{
+    .weui-dialog__ft
+}
+
+.aui-dialog__btn{
+    .weui-dialog__btn
+}
+
+.aui-dialog__btn_primary{
+    .weui-dialog__btn_primary
+}
+
+.aui-dialog__btn_default{
+    .weui-dialog__btn_default
+}
+
+// mask基础引用
+.aui-mask{
+  .weui-mask;
+}
+
+.aui-mask_transparent{
+  .weui-mask_transparent;
+}
+
+

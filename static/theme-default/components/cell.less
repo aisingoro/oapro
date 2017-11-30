@@ -1,0 +1,51 @@
+@import './common/tap.less';
+@import '../weui/base/mixin/setArrow.less';
+@import '../weui/widget/weui_cell/weui_cell_global';
+@import '../weui/widget/weui-loading/weui-loading.less';
+
+.aui-loading{
+  .weui-loading
+}
+.aui-tap-active {
+  tap-highlight-color: @cell-active-tap-highlight-color;
+  user-select:none;
+}
+  
+.aui-cell-label {
+    display: block;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  
+.aui-cell__ft .aui-loading {
+    display: block;
+  }
+  
+.aui-cell__ft.aui-cell-align-left {
+    text-align: left;
+  }
+  
+.aui-cell.aui-cell-no-border-intent:before {
+    left: 0;
+  }
+  
+.aui-cell_access .aui-cell__ft.aui-cell-arrow-down:after {
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0) rotate(90deg);
+  }
+  
+.aui-cell_access .aui-cell__ft.aui-cell-arrow-up:after {
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0) rotate(-90deg);
+  }
+  
+.aui-cell-arrow-transition:after {
+    transition: transform 300ms;
+  }
+  
+.aui-cell-disabled {
+    .aui-label {
+      color: @cell-disabled-label;
+    }
+    &.aui-cell_access .aui-cell__ft:after {
+      border-color: @cell-disabled-arrow-color;
+    }
+  }

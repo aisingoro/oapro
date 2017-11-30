@@ -1,0 +1,51 @@
+@import '../weui/widget/weui_cell/weui_cell_global';
+@import '../weui/widget/weui_cell/weui_access';
+@import '../weui/widget/weui_media_box/weui_media_box';
+
+
+.aui-media-box{
+    .weui-media-box
+}
+
+.aui-media-box_small-appmsg{
+    .weui-media-box_small-appmsg;
+    .aui-cells {
+        margin-top: 0;
+        &:before {
+            display: none;
+        }
+    }
+}
+
+.aui-media-box_appmsg{
+    .weui-media-box_appmsg;
+    .aui-media-box__hd {
+                margin-right: .8em;
+                width: 60px;
+                height: 60px;
+                line-height: 60px;
+                text-align: center;
+            }
+    .aui-media-box__thumb {
+                width: 100%;
+                max-height: 100%;
+                vertical-align: top;
+            }
+    .aui-media-box__bd {
+                flex: 1;
+                min-width: 0;
+            }
+}
+
+
+.aui-media-box_text{
+    .weui-media-box_text
+}
+
+.aui-media-box__title{
+    .weui-media-box__title
+}
+
+.aui-media-box__desc{
+    .weui-media-box__desc
+}
